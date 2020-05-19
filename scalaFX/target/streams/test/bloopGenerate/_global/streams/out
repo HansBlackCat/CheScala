@@ -1,0 +1,4 @@
+[debug] [scalaFX-test] Classpath dependencies List()
+[debug] [scalaFX-test] Dependencies from configurations List(scalaFX)
+[debug] Bloop wrote the configuration of project 'scalaFX-test' to '/Users/hansblackcat/Documents/Git/CheScala/.bloop/scalaFX-test.json'
+[success] Generated .bloop/scalaFX-test.json

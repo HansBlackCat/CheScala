@@ -4,7 +4,7 @@ class ChessPiece private (
     private[this] var _pieceKind: ChessPieceKind,
     private[this] var _location: (Int, Int),
     private[this] var _isWhite: Boolean,
-    private[this] var _isPromotion: Boolean
+    private[this] var _isPromotion: Boolean,
 ) extends ChessBitControl with ChessPieceKind {
 
     def pieceKind = _pieceKind
@@ -20,10 +20,14 @@ class ChessPiece private (
         this(kindIden, locIden, isWhiteIden, false)
     }
 
-    def promotion(kindIden: ChessPieceKind) = {
+    def promotionTo(kindIden: ChessPieceKind) = {
         isPromotion = true
         pieceKind = kindIden
     } 
+
+    def move(iptId: (Int, Int)) = {
+        _location = (_location._1 + iptId._1, _location._2 + iptId._2)
+    }
 }
 object ChessPiece {
     def apply(x: Char, loc: Int, white: Int) = {

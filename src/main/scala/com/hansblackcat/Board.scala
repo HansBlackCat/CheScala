@@ -1,9 +1,9 @@
 package com.hansblackcat
 import scala.collection.mutable.ListBuffer
 
-class Board {
-    private[this] val currentBoard = ListBuffer[ChessPiece]()
-    private[this] val historyBoard = ListBuffer[ListBuffer[ChessPiece]]()
+class Board extends PieceAction {
+    private[this] var currentBoard = ListBuffer[ChessPiece]()
+    private[this] var historyBoard = ListBuffer[ListBuffer[ChessPiece]]()
 
     def initiateBoard() = {
         val initPiece = {
@@ -21,6 +21,19 @@ class Board {
         }
         for (i <- initPiece) currentBoard += i
     }   
+
+    def delete(loc: (Int, Int)) = {
+        require(0 < loc._1 && loc._1 < 9 && 0 < loc._2 && loc._2 < 9)
+        for (i <- currentBoard) {
+            if (i.location == loc) {}
+        }
+    }    
+
+    // TODO
+    // delete
+    // turn
+    // range
+
 
     def printConsole() = {
         println(currentBoard.length)

@@ -7451,3 +7451,601 @@ WARNING: Unmatched cancel notification for request id 13064
 2020.05.20 01:00:52 INFO  time: compiled root in 0.66s
 2020.05.20 01:03:15 INFO  compiling root (1 scala source)
 2020.05.20 01:03:15 INFO  time: compiled root in 0.4s
+2020.05.20 01:17:30 INFO  compiling root (1 scala source)
+2020.05.20 01:17:30 INFO  time: compiled root in 0.21s
+2020.05.20 01:17:31 INFO  compiling root (1 scala source)
+2020.05.20 01:17:31 INFO  time: compiled root in 0.12s
+2020.05.20 01:17:59 INFO  compiling root (1 scala source)
+2020.05.20 01:17:59 INFO  time: compiled root in 46ms
+May 20, 2020 1:17:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: expected identifier; obtained eof
+trait 
+      ^
+trait 
+      ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: expected identifier; obtained eof
+trait 
+      ^
+trait 
+      ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: expected identifier; obtained eof
+trait 
+      ^
+trait 
+      ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 20, 2020 1:18:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: expected identifier; obtained eof
+trait 
+      ^
+trait 
+      ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: expected identifier; obtained eof
+trait 
+      ^
+trait 
+      ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: expected identifier; obtained eof
+trait 
+      ^
+trait 
+      ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 20, 2020 1:18:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: expected identifier; obtained eof
+trait 
+      ^
+trait 
+      ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: expected identifier; obtained eof
+trait 
+      ^
+trait 
+      ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala:3: error: expected identifier; obtained eof
+trait 
+      ^
+trait 
+      ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+2020.05.20 01:18:01 INFO  compiling root (1 scala source)
+2020.05.20 01:18:01 INFO  time: compiled root in 0.34s
+2020.05.20 01:18:03 INFO  compiling root (1 scala source)
+2020.05.20 01:18:03 INFO  time: compiled root in 0.35s
+2020.05.20 01:18:58 INFO  compiling root (1 scala source)
+2020.05.20 01:18:58 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2020.05.20 01:18:58 INFO  time: compiled root in 0.38s
+2020.05.20 01:19:00 INFO  compiling root (1 scala source)
+2020.05.20 01:19:00 INFO  time: compiled root in 0.4s
+2020.05.20 01:19:11 INFO  compiling root (1 scala source)
+2020.05.20 01:19:11 INFO  time: compiled root in 0.6s
+2020.05.20 01:19:14 INFO  compiling root (1 scala source)
+2020.05.20 01:19:14 INFO  time: compiled root in 0.66s
+May 20, 2020 1:21:08 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+May 20, 2020 1:21:08 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:962)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:810)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+2020.05.20 01:21:09 INFO  compiling root (1 scala source)
+2020.05.20 01:21:09 INFO  time: compiled root in 0.56s
+2020.05.20 01:21:19 INFO  compiling root (1 scala source)
+2020.05.20 01:21:19 INFO  time: compiled root in 47ms
+2020.05.20 01:21:22 INFO  compiling root (1 scala source)
+2020.05.20 01:21:22 INFO  time: compiled root in 55ms
+2020.05.20 01:21:24 INFO  compiling root (1 scala source)
+2020.05.20 01:21:24 INFO  time: compiled root in 41ms
+May 20, 2020 1:21:27 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+May 20, 2020 1:21:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:962)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:810)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+2020.05.20 01:21:30 INFO  compiling root (1 scala source)
+2020.05.20 01:21:30 INFO  time: compiled root in 0.55s
+2020.05.20 01:21:39 INFO  compiling root (1 scala source)
+2020.05.20 01:21:39 INFO  time: compiled root in 0.87s
+2020.05.20 01:22:02 INFO  compiling root (1 scala source)
+2020.05.20 01:22:02 INFO  time: compiled root in 0.67s
+2020.05.20 01:22:05 INFO  compiling root (1 scala source)
+2020.05.20 01:22:05 INFO  time: compiled root in 0.57s
+2020.05.20 01:23:37 INFO  compiling root (1 scala source)
+2020.05.20 01:23:37 INFO  time: compiled root in 51ms
+2020.05.20 01:23:38 INFO  compiling root (1 scala source)
+2020.05.20 01:23:38 INFO  time: compiled root in 0.58s
+2020.05.20 01:23:40 INFO  compiling root (1 scala source)
+2020.05.20 01:23:40 INFO  time: compiled root in 64ms
+2020.05.20 01:23:41 INFO  compiling root (1 scala source)
+2020.05.20 01:23:41 INFO  time: compiled root in 55ms
+2020.05.20 01:23:46 INFO  compiling root (1 scala source)
+2020.05.20 01:23:46 INFO  time: compiled root in 63ms
+2020.05.20 01:24:01 INFO  compiling root (1 scala source)
+2020.05.20 01:24:01 INFO  time: compiled root in 0.6s
+2020.05.20 01:24:04 INFO  compiling root (1 scala source)
+2020.05.20 01:24:04 INFO  time: compiled root in 60ms
+2020.05.20 01:24:47 INFO  compiling root (1 scala source)
+2020.05.20 01:24:47 INFO  time: compiled root in 0.61s
+2020.05.20 01:24:58 INFO  compiling root (1 scala source)
+2020.05.20 01:24:58 INFO  time: compiled root in 40ms
+2020.05.20 01:25:03 INFO  compiling root (1 scala source)
+2020.05.20 01:25:03 INFO  time: compiled root in 58ms
+2020.05.20 01:25:04 INFO  compiling root (1 scala source)
+2020.05.20 01:25:04 INFO  time: compiled root in 0.58s
+2020.05.20 01:25:06 INFO  compiling root (1 scala source)
+2020.05.20 01:25:06 INFO  time: compiled root in 44ms
+2020.05.20 01:25:07 INFO  compiling root (1 scala source)
+2020.05.20 01:25:07 INFO  time: compiled root in 0.61s
+2020.05.20 01:25:08 INFO  compiling root (1 scala source)
+2020.05.20 01:25:08 INFO  time: compiled root in 18ms
+2020.05.20 01:25:11 INFO  compiling root (1 scala source)
+2020.05.20 01:25:11 INFO  time: compiled root in 41ms
+2020.05.20 01:25:17 INFO  compiling root (1 scala source)
+2020.05.20 01:25:17 INFO  time: compiled root in 40ms
+2020.05.20 01:25:21 INFO  compiling root (1 scala source)
+2020.05.20 01:25:21 INFO  time: compiled root in 0.68s
+2020.05.20 01:25:23 INFO  compiling root (1 scala source)
+2020.05.20 01:25:23 INFO  time: compiled root in 59ms
+2020.05.20 01:25:26 INFO  compiling root (1 scala source)
+2020.05.20 01:25:26 INFO  time: compiled root in 0.92s
+2020.05.20 01:30:17 INFO  compiling root (1 scala source)
+2020.05.20 01:30:17 INFO  time: compiled root in 0.66s
+2020.05.20 01:30:18 INFO  compiling root (1 scala source)
+2020.05.20 01:30:18 INFO  time: compiled root in 0.15s
+2020.05.20 01:32:54 INFO  compiling root (1 scala source)
+2020.05.20 01:32:54 INFO  time: compiled root in 0.61s
+2020.05.20 01:32:55 INFO  compiling root (1 scala source)
+2020.05.20 01:32:55 INFO  time: compiled root in 0.15s
+2020.05.20 01:32:59 INFO  compiling root (1 scala source)
+2020.05.20 01:32:59 INFO  time: compiled root in 0.6s
+2020.05.20 01:33:00 INFO  compiling root (1 scala source)
+2020.05.20 01:33:00 INFO  time: compiled root in 0.15s
+2020.05.20 01:33:03 INFO  compiling root (1 scala source)
+2020.05.20 01:33:03 INFO  time: compiled root in 0.58s
+2020.05.20 01:39:14 INFO  compiling root (1 scala source)
+2020.05.20 01:39:14 INFO  time: compiled root in 0.67s
+2020.05.20 01:39:25 INFO  shutting down Metals
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+2020.05.20 09:56:20 INFO  started: Metals version 0.9.0 in workspace '/Users/hansblackcat/Documents/Git/CheScala'
+2020.05.20 09:56:21 INFO  time: initialize in 1.17s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/mz/n7zhg69s2vnc5bxt8djn4k_r0000gn/T/bsp-launcher3312731760613803508/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.05.20 09:56:22 INFO  skipping build import with status 'Dismissed'
+2020.05.20 09:56:22 INFO  no build target: using presentation compiler with only scala-library
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+2020.05.20 09:56:26 WARN  no build target for: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Board.scala
+2020.05.20 09:56:26 WARN  no build target for: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/PieceAction.scala
+May 20, 2020 9:56:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+May 20, 2020 9:56:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.0-RC1-229-b7c15aa9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 4 projects from '/Users/hansblackcat/Documents/Git/CheScala/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/hansblackcat/Documents/Git/CheScala/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/Users/hansblackcat/Documents/Git/CheScala/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/Users/hansblackcat/Documents/Git/CheScala/.bloop/scalaFX.json'
+[0m[32m[D][0m Loading project from '/Users/hansblackcat/Documents/Git/CheScala/.bloop/scalaFX-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.2.
+[0m[32m[D][0m   => /Users/hansblackcat/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /Users/hansblackcat/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.14.1/jline-3.14.1.jar
+[0m[32m[D][0m   => /Users/hansblackcat/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.2/scala-compiler-2.13.2.jar
+[0m[32m[D][0m   => /Users/hansblackcat/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.2/scala-library-2.13.2.jar
+[0m[32m[D][0m   => /Users/hansblackcat/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.2/scala-reflect-2.13.2.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test', 'scalaFX-test', 'scalaFX'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Missing analysis file for project 'scalaFX-test'
+[0m[32m[D][0m Missing analysis file for project 'scalaFX'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/Users/hansblackcat/Documents/Git/CheScala/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/mz/n7zhg69s2vnc5bxt8djn4k_r0000gn/T/bsp-launcher3312731760613803508/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/mz/n7zhg69s2vnc5bxt8djn4k_r0000gn/T/bsp-launcher3312731760613803508/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.05.20 09:56:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hansblackcat/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.05.20 09:56:28 INFO  time: connected to build server in 6.15s
+2020.05.20 09:56:28 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+2020.05.20 09:56:28 INFO  time: imported build in 0.12s
+2020.05.20 09:56:32 INFO  time: indexed workspace in 3.45s
+May 20, 2020 9:56:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/publishDiagnostics",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/ChessBit.scala"
+    },
+    "buildTarget": {
+      "uri": "file:/Users/hansblackcat/Documents/Git/CheScala/?id\u003droot"
+    },
+    "diagnostics": [
+      {
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "code": "package com.hansblackcat",
+        "source": "bloop",
+        "message": "\nFound names but no class, trait or object is defined in the compilation unit.\nThe incremental compiler cannot record the dependency information in such case.\nSome errors like unused import referring to a non-existent class might not be reported.\n    "
+      }
+    ],
+    "reset": true
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/ChessBit.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:354)
+	at scala.meta.internal.metals.Diagnostics.onPublishDiagnostics(Diagnostics.scala:143)
+	at scala.meta.internal.metals.Diagnostics.onBuildPublishDiagnostics(Diagnostics.scala:123)
+	at scala.meta.internal.metals.ForwardingMetalsBuildClient.onBuildPublishDiagnostics(ForwardingMetalsBuildClient.scala:93)
+	... 16 more
+
+2020.05.20 09:57:33 INFO  compiling root (1 scala source)
+2020.05.20 09:57:38 INFO  time: compiled root in 4.05s
+2020.05.20 09:57:42 INFO  compiling root (1 scala source)
+2020.05.20 09:57:42 INFO  time: compiled root in 0.11s
+2020.05.20 09:57:52 INFO  compiling root (1 scala source)
+2020.05.20 09:57:52 INFO  time: compiled root in 91ms
+something's wrong: no file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/ChessPiece.scala in List[<error>]RangePosition(file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/ChessPiece.scala, 264, 264, 1847)
+something's wrong: no file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/ChessPiece.scala in List[<error>]RangePosition(file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/ChessPiece.scala, 264, 264, 278)
+2020.05.20 09:57:59 INFO  compiling root (1 scala source)
+2020.05.20 09:57:59 INFO  time: compiled root in 79ms
+May 20, 2020 9:58:03 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+May 20, 2020 9:58:03 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:962)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:810)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+2020.05.20 09:58:06 INFO  compiling root (1 scala source)
+2020.05.20 09:58:06 INFO  time: compiled root in 74ms
+something's wrong: no file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/ChessPiece.scala in List[(Int, Int)]RangePosition(file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/ChessPiece.scala, 264, 264, 280)
+2020.05.20 09:58:14 INFO  compiling root (1 scala source)
+2020.05.20 09:58:14 INFO  time: compiled root in 0.26s
+2020.05.20 09:58:46 INFO  compiling root (1 scala source)
+2020.05.20 09:58:46 INFO  time: compiled root in 0.95s
+May 20, 2020 10:00:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 269
+2020.05.20 10:00:51 INFO  compiling root (1 scala source)
+2020.05.20 10:00:52 INFO  time: compiled root in 1.03s
+2020.05.20 10:18:56 INFO  compiling root (1 scala source)
+2020.05.20 10:18:56 INFO  time: compiled root in 0.18s
+2020.05.20 10:18:57 INFO  compiling root (1 scala source)
+2020.05.20 10:18:57 INFO  time: compiled root in 40ms
+2020.05.20 10:18:58 INFO  compiling root (1 scala source)
+2020.05.20 10:18:58 INFO  time: compiled root in 89ms
+2020.05.20 10:19:01 INFO  compiling root (1 scala source)
+2020.05.20 10:19:01 INFO  time: compiled root in 53ms
+May 20, 2020 10:19:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 450
+2020.05.20 10:19:06 INFO  compiling root (1 scala source)
+2020.05.20 10:19:06 INFO  time: compiled root in 0.17s
+2020.05.20 10:19:14 INFO  compiling root (1 scala source)
+2020.05.20 10:19:14 INFO  time: compiled root in 53ms
+2020.05.20 10:42:00 INFO  compiling root (1 scala source)
+2020.05.20 10:42:00 INFO  time: compiled root in 0.93s
+2020.05.20 10:42:09 INFO  compiling root (1 scala source)
+2020.05.20 10:42:09 INFO  time: compiled root in 0.86s
+May 20, 2020 10:42:22 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+May 20, 2020 10:42:22 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:962)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:810)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+2020.05.20 10:42:23 INFO  compiling root (1 scala source)
+2020.05.20 10:42:23 INFO  time: compiled root in 0.8s
+2020.05.20 10:42:29 INFO  compiling root (1 scala source)
+2020.05.20 10:42:29 INFO  time: compiled root in 55ms
+2020.05.20 10:42:33 INFO  compiling root (1 scala source)
+2020.05.20 10:42:33 INFO  time: compiled root in 51ms
+2020.05.20 10:42:41 INFO  compiling root (1 scala source)
+2020.05.20 10:42:41 INFO  time: compiled root in 0.81s
+May 20, 2020 10:51:26 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+May 20, 2020 10:51:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:962)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:810)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+May 20, 2020 10:51:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 886
+May 20, 2020 10:51:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 888
+2020.05.20 10:51:29 INFO  compiling root (1 scala source)
+2020.05.20 10:51:29 INFO  time: compiled root in 0.78s
+2020.05.20 10:51:36 INFO  compiling root (1 scala source)
+2020.05.20 10:51:36 INFO  time: compiled root in 0.14s
+2020.05.20 10:51:38 INFO  compiling root (1 scala source)
+2020.05.20 10:51:38 INFO  time: compiled root in 0.12s
+2020.05.20 10:51:56 INFO  compiling root (1 scala source)
+2020.05.20 10:51:56 INFO  time: compiled root in 0.13s
+2020.05.20 10:51:59 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Board.scala:26:17: stale bloop error: type mismatch;
+ found   : Int
+ required: Boolean
+        require(loc._1)
+                ^^^^^^
+2020.05.20 10:51:59 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Board.scala:26:17: stale bloop error: type mismatch;
+ found   : Int
+ required: Boolean
+        require(loc._1)
+                ^^^^^^
+2020.05.20 10:52:00 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Board.scala:26:17: stale bloop error: type mismatch;
+ found   : Int
+ required: Boolean
+        require(loc._1)
+                ^^^^^^
+2020.05.20 10:52:00 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Board.scala:26:17: stale bloop error: type mismatch;
+ found   : Int
+ required: Boolean
+        require(loc._1)
+                ^^^^^^
+2020.05.20 10:52:01 INFO  compiling root (1 scala source)
+2020.05.20 10:52:01 INFO  time: compiled root in 0.78s
+2020.05.20 10:52:03 INFO  compiling root (1 scala source)
+2020.05.20 10:52:03 INFO  time: compiled root in 0.25s
+2020.05.20 10:52:06 INFO  compiling root (1 scala source)
+2020.05.20 10:52:06 INFO  time: compiled root in 0.12s
+2020.05.20 10:52:10 INFO  compiling root (1 scala source)
+2020.05.20 10:52:10 INFO  time: compiled root in 0.8s
+2020.05.20 10:52:11 INFO  compiling root (1 scala source)
+2020.05.20 10:52:11 INFO  time: compiled root in 0.28s
+2020.05.20 10:52:14 INFO  compiling root (1 scala source)
+2020.05.20 10:52:14 INFO  time: compiled root in 0.1s
+2020.05.20 10:52:15 INFO  compiling root (1 scala source)
+2020.05.20 10:52:15 INFO  time: compiled root in 0.1s
+2020.05.20 10:52:19 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Board.scala:26:45: stale bloop error: type mismatch;
+ found   : Int
+ required: Boolean
+        require(0 < loc._1 && loc._1 < 9 && loc._2)
+                                            ^^^^^^
+2020.05.20 10:52:19 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Board.scala:26:45: stale bloop error: type mismatch;
+ found   : Int
+ required: Boolean
+        require(0 < loc._1 && loc._1 < 9 && loc._2)
+                                            ^^^^^^
+2020.05.20 10:52:20 INFO  compiling root (1 scala source)
+2020.05.20 10:52:20 INFO  time: compiled root in 0.74s
+2020.05.20 10:52:28 INFO  compiling root (1 scala source)
+2020.05.20 10:52:28 INFO  time: compiled root in 0.72s
+2020.05.20 10:54:29 INFO  compiling root (1 scala source)
+2020.05.20 10:54:29 INFO  time: compiled root in 54ms
+2020.05.20 10:54:33 INFO  compiling root (1 scala source)
+2020.05.20 10:54:33 INFO  time: compiled root in 45ms
+2020.05.20 10:54:37 INFO  compiling root (1 scala source)
+2020.05.20 10:54:37 INFO  time: compiled root in 48ms
+2020.05.20 10:54:39 INFO  compiling root (1 scala source)
+2020.05.20 10:54:39 INFO  time: compiled root in 52ms
+2020.05.20 10:54:41 INFO  compiling root (1 scala source)
+2020.05.20 10:54:41 INFO  time: compiled root in 56ms
+2020.05.20 10:54:43 INFO  compiling root (1 scala source)
+2020.05.20 10:54:43 INFO  time: compiled root in 46ms
+2020.05.20 10:55:37 INFO  compiling root (1 scala source)
+2020.05.20 10:55:37 INFO  time: compiled root in 49ms
+2020.05.20 10:55:39 INFO  compiling root (1 scala source)
+2020.05.20 10:55:39 INFO  time: compiled root in 74ms
+2020.05.20 10:55:44 INFO  compiling root (1 scala source)
+2020.05.20 10:55:44 INFO  time: compiled root in 48ms
+2020.05.20 10:57:00 INFO  compiling root (1 scala source)
+2020.05.20 10:57:00 INFO  time: compiled root in 0.73s
+2020.05.20 10:57:13 INFO  compiling root (1 scala source)
+2020.05.20 10:57:13 INFO  time: compiled root in 0.14s
+2020.05.20 10:57:14 INFO  compiling root (1 scala source)
+2020.05.20 10:57:14 INFO  time: compiled root in 0.11s
+2020.05.20 10:57:21 INFO  compiling root (1 scala source)
+2020.05.20 10:57:21 INFO  time: compiled root in 0.7s
+2020.05.20 10:57:31 INFO  compiling root (1 scala source)
+2020.05.20 10:57:31 INFO  time: compiled root in 50ms
+2020.05.20 10:57:33 INFO  compiling root (1 scala source)
+2020.05.20 10:57:33 INFO  time: compiled root in 78ms
+2020.05.20 10:57:35 INFO  compiling root (1 scala source)
+2020.05.20 10:57:35 INFO  time: compiled root in 45ms
+2020.05.20 10:57:38 INFO  compiling root (1 scala source)
+2020.05.20 10:57:38 INFO  time: compiled root in 47ms
+2020.05.20 10:58:02 INFO  compiling root (1 scala source)
+2020.05.20 10:58:02 INFO  time: compiled root in 57ms
+2020.05.20 10:59:20 INFO  compiling root (1 scala source)
+2020.05.20 10:59:20 INFO  time: compiled root in 0.71s
+2020.05.20 10:59:23 INFO  shutting down Metals
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...

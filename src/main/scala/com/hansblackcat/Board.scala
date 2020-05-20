@@ -2,8 +2,12 @@ package com.hansblackcat
 import scala.collection.mutable.ListBuffer
 
 class Board extends PieceAction {
-    private[this] var currentBoard = ListBuffer[ChessPiece]()
-    private[this] var historyBoard = ListBuffer[ListBuffer[ChessPiece]]()
+    private[this] var _currentBoard = ListBuffer[ChessPiece]()
+    private[this] var _historyBoard = ListBuffer[ListBuffer[ChessPiece]]()
+    private[this] var _turn = 1
+
+    def currentBoard = _currentBoard
+    def turn = _turn
 
     def initiateBoard() = {
         val initPiece = {
@@ -14,20 +18,31 @@ class Board extends PieceAction {
                 ChessPiece('k',15,1),ChessPiece('b',16,1),ChessPiece('n',17,1),ChessPiece('r',18,1)
             )
             val blackSeq = Seq(
-                ChessPiece('r',81,1),ChessPiece('n',82,1),ChessPiece('b',83,1),ChessPiece('q',84,1),
-                ChessPiece('k',85,1),ChessPiece('b',86,1),ChessPiece('n',87,1),ChessPiece('r',88,1)
+                ChessPiece('r',81,0),ChessPiece('n',82,0),ChessPiece('b',83,0),ChessPiece('q',84,0),
+                ChessPiece('k',85,0),ChessPiece('b',86,0),ChessPiece('n',87,0),ChessPiece('r',88,0)
             ) 
             whiteSeq++whitePhone++blackSeq++blackPhone
         }
-        for (i <- initPiece) currentBoard += i
+        for (i <- initPiece) _currentBoard += i
     }   
 
     def delete(loc: (Int, Int)) = {
         require(0 < loc._1 && loc._1 < 9 && 0 < loc._2 && loc._2 < 9)
-        for (i <- currentBoard) {
-            if (i.location == loc) {}
+        var delete = false
+        for (i <- _currentBoard) {
+            if (i.location == loc) {
+                delete = true
+                _currentBoard -= i
+            }
+        }
+
+        if (delete == false) {
+            throw new Exception("No element to delete")
         }
     }    
+
+    def turnChange() = { _turn = _turn ^ 1 }
+
 
     // TODO
     // delete
@@ -36,6 +51,6 @@ class Board extends PieceAction {
 
 
     def printConsole() = {
-        println(currentBoard.length)
+        println(_currentBoard.length)
     }
 }

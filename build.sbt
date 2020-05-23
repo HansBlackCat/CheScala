@@ -3,15 +3,22 @@ ThisBuild / organization := "com.hansblackcat"
 ThisBuild / scalaVersion := "2.13.2"
 ThisBuild / version := "0.1.0"
 
-lazy val root = (project in file("."))
-    .settings(
-        name := "Chess with Scala"
-    )
+// Add dependency on ScalaFX library
+libraryDependencies ++= Seq(
+  "org.scalafx" %% "scalafx" % "14-R19",
+  "com.lihaoyi" %% "fastparse" % "2.2.2"
+)
 
+// Determine OS version of JavaFX binaries
+lazy val osName = System.getProperty("os.name") match {
+  case n if n.startsWith("Linux")   => "linux"
+  case n if n.startsWith("Mac")     => "mac"
+  case n if n.startsWith("Windows") => "win"
+  case _ => throw new Exception("Unknown platform!")
+}
 
-lazy val scalaFX = (project in file("scalaFX"))
-    .settings(
-        libraryDependencies ++= Seq(
-            "org.scalafx" %% "scalafx" % "14-R19"
-        )
-    )
+// Add dependency on JavaFX libraries, OS dependent
+lazy val javaFXModules = Seq("base", "controls", "fxml", "graphics", "media", "swing", "web")
+libraryDependencies ++= javaFXModules.map( m =>
+  "org.openjfx" % s"javafx-$m" % "14.0.1" classifier osName
+)

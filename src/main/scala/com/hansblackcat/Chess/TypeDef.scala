@@ -31,6 +31,7 @@ case class ExLocation(location: String) extends Location {
     }
 }
 
+
 trait PGNComment
 case class Comment(contents: String) extends PGNComment
 
@@ -44,7 +45,7 @@ case class TPNBlack(contents: String) extends PGNTagPairs
 case class TPResult(contents: String) extends PGNTagPairs
 
 trait PGNPieceKind
-case object Phone extends PGNPieceKind
+case object Pawn extends PGNPieceKind
 case object King extends PGNPieceKind
 case object Queen extends PGNPieceKind
 case object Knight extends PGNPieceKind
@@ -67,3 +68,9 @@ case class Black(who: PGNPieceKind, where: Location, what: PGNSpecial*) extends 
 
 trait PGN extends PGNTagPairs with PGNMoveText with PGNComment
 
+
+
+trait Info
+case object InfoNone extends Info
+case class InfoWhite(kind: PGNPieceKind, init: Boolean) extends Info
+case class InfoBlack(kind: PGNPieceKind, init: Boolean) extends Info

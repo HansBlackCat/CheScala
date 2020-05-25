@@ -1,6 +1,7 @@
 package com.hansblackcat.Chess
 
 trait Location
+case object NoneLocation extends Location
 case class ExLocation(location: String) extends Location {
     val a = location.toCharArray().map(_.toInt)
     val toArrLoc = Array(a(0) - 97, a(1) - 49)
@@ -54,10 +55,11 @@ case object Rook extends PGNPieceKind
 
 trait PGNSpecial
 case object PGNNone extends PGNSpecial
+case class OriginFromRow(char: Char) extends PGNSpecial
 case object Capture extends PGNSpecial
 case object QSCastling extends PGNSpecial
 case object KSCastling extends PGNSpecial
-case object Promotion extends PGNSpecial
+case class Promotion(kind: PGNPieceKind) extends PGNSpecial
 case object CheckingMove extends PGNSpecial
 case object CheckMateingMove extends PGNSpecial
 

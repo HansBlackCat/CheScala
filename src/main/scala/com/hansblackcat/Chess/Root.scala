@@ -1,8 +1,20 @@
 package com.hansblackcat.Chess
+import scala.collection.mutable.{Map=>MMap}
 
 class Root {
+    implicit class ArrayLikeVector (arr: Array[Int]) {
+        def +> (tup: (Int, Int)) = {
+            Array(arr(0)+tup._1, arr(1)+tup._2)
+        }
+    }
+
     implicit class ExLocationMaker (row: Char) {
+        /*
         def #> (colum: Int) = {
+            ExLocation(row +: colum.toString)
+        }
+        */
+        def #> (colum: Char) = {
             ExLocation(row +: colum.toString)
         }
     }
@@ -40,8 +52,6 @@ class Root {
         Pawn.<<@>, Pawn.<<@>, Pawn.<<@>, Pawn.<<@>, Pawn.<<@>, Pawn.<<@>, Pawn.<<@>, Pawn.<<@>,
         Rook.<<@>, Knight.<<@>, Bishop.<<@>, Queen.<<@>, King.<<@>, Bishop.<<@>, Knight.<<@>, Rook.<<@>,
     )
-    val baseMapHash = baseGridKeys.zip(baseGridValue).toMap
-
-
-    
+    val baseMapHashTMP = baseGridKeys.zip(baseGridValue).toMap
+    val baseMapHash = MMap(baseMapHashTMP.toSeq: _*)
 }

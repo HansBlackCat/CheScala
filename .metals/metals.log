@@ -40319,3 +40319,1327 @@ WARNING: Unmatched cancel notification for request id 9324
 No more data in the client stdin, exiting...
 No more data in the server stdin, exiting...
 No more data in the server stdin, exiting...
+2020.05.25 22:34:51 INFO  started: Metals version 0.9.0 in workspace '/Users/hansblackcat/Documents/Git/CheScala'
+2020.05.25 22:34:52 INFO  time: initialize in 1.04s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/mz/n7zhg69s2vnc5bxt8djn4k_r0000gn/T/bsp-launcher1167835647553635754/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.05.25 22:34:52 INFO  skipping build import with status 'Dismissed'
+2020.05.25 22:34:52 INFO  no build target: using presentation compiler with only scala-library
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+2020.05.25 22:34:55 WARN  no build target for: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.0-RC1-229-b7c15aa9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/hansblackcat/Documents/Git/CheScala/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/hansblackcat/Documents/Git/CheScala/.bloop/chescala.json'
+[0m[32m[D][0m Loading project from '/Users/hansblackcat/Documents/Git/CheScala/.bloop/chescala-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.2.
+[0m[32m[D][0m   => /Users/hansblackcat/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /Users/hansblackcat/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.14.1/jline-3.14.1.jar
+[0m[32m[D][0m   => /Users/hansblackcat/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.2/scala-compiler-2.13.2.jar
+[0m[32m[D][0m   => /Users/hansblackcat/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.2/scala-library-2.13.2.jar
+[0m[32m[D][0m   => /Users/hansblackcat/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.2/scala-reflect-2.13.2.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'chescala', 'chescala-test'
+[0m[32m[D][0m Missing analysis file for project 'chescala-test'
+[0m[32m[D][0m Loading previous analysis for 'chescala' from '/Users/hansblackcat/Documents/Git/CheScala/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/mz/n7zhg69s2vnc5bxt8djn4k_r0000gn/T/bsp-launcher1167835647553635754/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/mz/n7zhg69s2vnc5bxt8djn4k_r0000gn/T/bsp-launcher1167835647553635754/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.05.25 22:34:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hansblackcat/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.05.25 22:34:57 INFO  time: connected to build server in 4.76s
+2020.05.25 22:34:57 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+2020.05.25 22:34:57 INFO  time: imported build in 0.1s
+2020.05.25 22:35:00 INFO  time: indexed workspace in 3.27s
+2020.05.25 22:35:07 INFO  compiling chescala (1 scala source)
+2020.05.25 22:35:08 INFO  time: compiled chescala in 1.78s
+2020.05.25 22:35:10 INFO  compiling chescala (1 scala source)
+2020.05.25 22:35:13 INFO  time: compiled chescala in 2.98s
+2020.05.25 22:35:48 INFO  compiling chescala (1 scala source)
+2020.05.25 22:35:49 INFO  time: compiled chescala in 1.43s
+2020.05.25 22:35:49 INFO  compiling chescala (1 scala source)
+2020.05.25 22:35:49 INFO  time: compiled chescala in 0.7s
+2020.05.25 22:36:35 INFO  compiling chescala (1 scala source)
+2020.05.25 22:36:36 INFO  time: compiled chescala in 1.29s
+something's wrong: no file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/TypeDef.scala in Array[Int]RangePosition(file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/TypeDef.scala, 270, 270, 280)
+2020.05.25 22:38:45 INFO  compiling chescala (1 scala source)
+2020.05.25 22:38:46 INFO  time: compiled chescala in 1.3s
+2020.05.25 22:38:51 INFO  compiling chescala (1 scala source)
+2020.05.25 22:38:51 INFO  time: compiled chescala in 72ms
+2020.05.25 22:38:56 INFO  compiling chescala (1 scala source)
+2020.05.25 22:38:56 INFO  time: compiled chescala in 89ms
+2020.05.25 22:38:56 INFO  compiling chescala (1 scala source)
+2020.05.25 22:38:56 INFO  time: compiled chescala in 47ms
+2020.05.25 22:38:59 INFO  compiling chescala (1 scala source)
+2020.05.25 22:38:59 INFO  time: compiled chescala in 83ms
+2020.05.25 22:39:00 INFO  compiling chescala (1 scala source)
+2020.05.25 22:39:00 INFO  time: compiled chescala in 64ms
+2020.05.25 22:39:11 INFO  compiling chescala (1 scala source)
+2020.05.25 22:39:11 INFO  time: compiled chescala in 65ms
+2020.05.25 22:39:31 INFO  compiling chescala (1 scala source)
+2020.05.25 22:39:31 INFO  time: compiled chescala in 0.2s
+2020.05.25 22:39:36 INFO  compiling chescala (1 scala source)
+2020.05.25 22:39:36 INFO  time: compiled chescala in 0.22s
+2020.05.25 22:39:51 INFO  compiling chescala (1 scala source)
+2020.05.25 22:39:51 INFO  time: compiled chescala in 0.94s
+2020.05.25 22:39:53 INFO  compiling chescala (1 scala source)
+2020.05.25 22:39:53 INFO  time: compiled chescala in 0.16s
+2020.05.25 22:40:08 INFO  compiling chescala (1 scala source)
+2020.05.25 22:40:08 INFO  time: compiled chescala in 0.17s
+2020.05.25 22:40:10 INFO  compiling chescala (1 scala source)
+2020.05.25 22:40:10 INFO  time: compiled chescala in 0.15s
+2020.05.25 22:40:15 INFO  compiling chescala (1 scala source)
+2020.05.25 22:40:16 INFO  time: compiled chescala in 1.28s
+2020.05.25 22:41:25 INFO  compiling chescala (1 scala source)
+2020.05.25 22:41:25 INFO  time: compiled chescala in 64ms
+2020.05.25 22:41:27 INFO  compiling chescala (1 scala source)
+2020.05.25 22:41:27 INFO  time: compiled chescala in 58ms
+2020.05.25 22:41:33 INFO  compiling chescala (1 scala source)
+2020.05.25 22:41:33 INFO  time: compiled chescala in 0.2s
+something's wrong: no file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/TypeDef.scala in Array[Int]RangePosition(file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/TypeDef.scala, 270, 270, 280)
+2020.05.25 22:42:04 INFO  compiling chescala (2 scala sources)
+2020.05.25 22:42:04 INFO  time: compiled chescala in 0.55s
+2020.05.25 22:42:17 INFO  compiling chescala (1 scala source)
+2020.05.25 22:42:17 INFO  time: compiled chescala in 0.18s
+2020.05.25 22:42:22 INFO  compiling chescala (2 scala sources)
+2020.05.25 22:42:22 INFO  time: compiled chescala in 0.4s
+2020.05.25 22:42:24 INFO  compiling chescala (2 scala sources)
+2020.05.25 22:42:24 INFO  time: compiled chescala in 71ms
+2020.05.25 22:42:34 INFO  compiling chescala (2 scala sources)
+2020.05.25 22:42:34 INFO  time: compiled chescala in 0.4s
+2020.05.25 22:42:40 INFO  compiling chescala (2 scala sources)
+2020.05.25 22:42:42 INFO  time: compiled chescala in 1.96s
+2020.05.25 22:43:22 INFO  compiling chescala (1 scala source)
+2020.05.25 22:43:23 INFO  time: compiled chescala in 1.01s
+2020.05.25 22:43:26 INFO  compiling chescala (1 scala source)
+2020.05.25 22:43:26 INFO  time: compiled chescala in 0.91s
+2020.05.25 22:43:28 INFO  compiling chescala (1 scala source)
+2020.05.25 22:43:28 INFO  time: compiled chescala in 0.89s
+2020.05.25 22:44:59 INFO  compiling chescala (1 scala source)
+2020.05.25 22:45:01 INFO  time: compiled chescala in 1.62s
+2020.05.25 22:45:01 INFO  compiling chescala (1 scala source)
+2020.05.25 22:45:01 INFO  time: compiled chescala in 0.17s
+2020.05.25 22:45:06 INFO  compiling chescala (2 scala sources)
+2020.05.25 22:45:08 INFO  time: compiled chescala in 1.7s
+2020.05.25 22:49:19 INFO  compiling chescala (1 scala source)
+2020.05.25 22:49:19 INFO  time: compiled chescala in 0.92s
+2020.05.25 22:49:23 INFO  compiling chescala (1 scala source)
+2020.05.25 22:49:23 INFO  time: compiled chescala in 59ms
+2020.05.25 22:49:25 INFO  compiling chescala (1 scala source)
+2020.05.25 22:49:25 INFO  time: compiled chescala in 63ms
+2020.05.25 22:49:28 INFO  compiling chescala (1 scala source)
+2020.05.25 22:49:28 INFO  time: compiled chescala in 54ms
+2020.05.25 22:49:31 INFO  compiling chescala (1 scala source)
+2020.05.25 22:49:31 INFO  time: compiled chescala in 56ms
+2020.05.25 22:49:34 INFO  compiling chescala (1 scala source)
+2020.05.25 22:49:34 INFO  time: compiled chescala in 51ms
+May 25, 2020 10:49:36 PM scala.meta.internal.pc.MetalsGlobal inverseSemanticdbSymbols
+SEVERE: invalid SemanticDB symbol: com/hansblackcat/Chess/PieceRule#base1Range().(location)
+illegal cyclic reference involving method base1Range
+2020.05.25 22:49:37 INFO  compiling chescala (1 scala source)
+2020.05.25 22:49:37 INFO  time: compiled chescala in 54ms
+2020.05.25 22:49:42 INFO  compiling chescala (1 scala source)
+2020.05.25 22:49:42 INFO  time: compiled chescala in 0.15s
+2020.05.25 22:49:42 INFO  compiling chescala (1 scala source)
+2020.05.25 22:49:42 INFO  time: compiled chescala in 0.13s
+2020.05.25 22:49:44 INFO  compiling chescala (1 scala source)
+2020.05.25 22:49:44 INFO  time: compiled chescala in 0.88s
+May 25, 2020 10:50:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1031
+2020.05.25 22:50:29 INFO  compiling chescala (1 scala source)
+2020.05.25 22:50:30 INFO  time: compiled chescala in 1.07s
+2020.05.25 22:51:20 INFO  compiling chescala (1 scala source)
+2020.05.25 22:51:20 INFO  time: compiled chescala in 0.15s
+2020.05.25 22:51:23 INFO  compiling chescala (1 scala source)
+2020.05.25 22:51:23 INFO  time: compiled chescala in 0.13s
+2020.05.25 22:51:35 INFO  compiling chescala (1 scala source)
+2020.05.25 22:51:35 INFO  time: compiled chescala in 0.88s
+2020.05.25 22:51:36 INFO  compiling chescala (1 scala source)
+2020.05.25 22:51:36 INFO  time: compiled chescala in 0.77s
+2020.05.25 22:51:38 INFO  compiling chescala (1 scala source)
+2020.05.25 22:51:38 INFO  time: compiled chescala in 48ms
+2020.05.25 22:51:43 INFO  compiling chescala (1 scala source)
+2020.05.25 22:51:43 INFO  time: compiled chescala in 0.8s
+2020.05.25 22:51:58 INFO  compiling chescala (1 scala source)
+2020.05.25 22:51:58 INFO  time: compiled chescala in 0.79s
+2020.05.25 22:52:00 INFO  compiling chescala (1 scala source)
+2020.05.25 22:52:00 INFO  time: compiled chescala in 65ms
+2020.05.25 22:52:03 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:13:31: stale bloop error: '(' expected but identifier found.
+        val baseKeysArr = for baseGridKeys
+                              ^
+2020.05.25 22:52:03 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:15:9: stale bloop error: illegal start of simple expression
+        val kindMatch = { 
+        ^
+2020.05.25 22:52:03 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:13:31: stale bloop error: '(' expected but identifier found.
+        val baseKeysArr = for baseGridKeys
+                              ^
+2020.05.25 22:52:03 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:15:9: stale bloop error: illegal start of simple expression
+        val kindMatch = { 
+        ^
+2020.05.25 22:52:05 INFO  compiling chescala (1 scala source)
+2020.05.25 22:52:05 INFO  time: compiled chescala in 50ms
+2020.05.25 22:52:08 INFO  compiling chescala (1 scala source)
+2020.05.25 22:52:08 INFO  time: compiled chescala in 52ms
+2020.05.25 22:52:17 INFO  compiling chescala (1 scala source)
+2020.05.25 22:52:17 INFO  time: compiled chescala in 0.13s
+2020.05.25 22:52:19 INFO  compiling chescala (1 scala source)
+2020.05.25 22:52:19 INFO  time: compiled chescala in 0.79s
+2020.05.25 22:52:26 INFO  compiling chescala (1 scala source)
+2020.05.25 22:52:26 INFO  time: compiled chescala in 60ms
+2020.05.25 22:52:26 INFO  compiling chescala (1 scala source)
+2020.05.25 22:52:26 INFO  time: compiled chescala in 30ms
+2020.05.25 22:52:31 INFO  compiling chescala (1 scala source)
+2020.05.25 22:52:31 INFO  time: compiled chescala in 0.8s
+2020.05.25 22:52:50 INFO  compiling chescala (1 scala source)
+2020.05.25 22:52:50 INFO  time: compiled chescala in 0.83s
+2020.05.25 22:52:55 INFO  compiling chescala (1 scala source)
+2020.05.25 22:52:55 INFO  time: compiled chescala in 0.89s
+2020.05.25 22:53:01 INFO  compiling chescala (1 scala source)
+2020.05.25 22:53:01 INFO  time: compiled chescala in 0.76s
+2020.05.25 22:53:04 INFO  compiling chescala (1 scala source)
+2020.05.25 22:53:04 INFO  time: compiled chescala in 0.13s
+2020.05.25 22:53:09 INFO  compiling chescala (1 scala source)
+2020.05.25 22:53:09 INFO  time: compiled chescala in 0.19s
+2020.05.25 22:53:12 INFO  compiling chescala (1 scala source)
+2020.05.25 22:53:12 INFO  time: compiled chescala in 0.83s
+2020.05.25 22:54:01 INFO  compiling chescala (1 scala source)
+2020.05.25 22:54:01 INFO  time: compiled chescala in 0.78s
+2020.05.25 22:54:02 INFO  compiling chescala (1 scala source)
+2020.05.25 22:54:02 INFO  time: compiled chescala in 0.3s
+2020.05.25 22:54:05 INFO  compiling chescala (1 scala source)
+2020.05.25 22:54:05 INFO  time: compiled chescala in 0.87s
+2020.05.25 22:56:11 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:11 INFO  time: compiled chescala in 51ms
+2020.05.25 22:56:13 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:13 INFO  time: compiled chescala in 0.12s
+2020.05.25 22:56:18 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:18 INFO  time: compiled chescala in 56ms
+2020.05.25 22:56:21 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:21 INFO  time: compiled chescala in 0.13s
+2020.05.25 22:56:29 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:43:26: stale bloop error: type mismatch;
+ found   : Int
+ required: Boolean
+        kindMatch.filter(_(0))
+                         ^^^^
+2020.05.25 22:56:29 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:43:26: stale bloop error: type mismatch;
+ found   : Int
+ required: Boolean
+        kindMatch.filter(_(0))
+                         ^^^^
+2020.05.25 22:56:29 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:43:26: stale bloop error: type mismatch;
+ found   : Int
+ required: Boolean
+        kindMatch.filter(_(0))
+                         ^^^^
+2020.05.25 22:56:29 INFO  /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:43:26: stale bloop error: type mismatch;
+ found   : Int
+ required: Boolean
+        kindMatch.filter(_(0))
+                         ^^^^
+2020.05.25 22:56:31 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:31 INFO  time: compiled chescala in 0.8s
+2020.05.25 22:56:34 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:34 INFO  time: compiled chescala in 0.78s
+2020.05.25 22:56:37 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:37 INFO  time: compiled chescala in 0.12s
+2020.05.25 22:56:40 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:40 INFO  time: compiled chescala in 0.12s
+2020.05.25 22:56:42 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:42 INFO  time: compiled chescala in 0.11s
+2020.05.25 22:56:44 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:44 INFO  time: compiled chescala in 0.11s
+2020.05.25 22:56:47 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:47 INFO  time: compiled chescala in 0.11s
+2020.05.25 22:56:54 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:54 INFO  time: compiled chescala in 0.36s
+2020.05.25 22:56:56 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:56 INFO  time: compiled chescala in 0.11s
+2020.05.25 22:56:58 INFO  compiling chescala (1 scala source)
+2020.05.25 22:56:58 INFO  time: compiled chescala in 0.11s
+2020.05.25 22:57:01 INFO  compiling chescala (1 scala source)
+2020.05.25 22:57:01 INFO  time: compiled chescala in 0.11s
+2020.05.25 22:57:11 INFO  compiling chescala (1 scala source)
+2020.05.25 22:57:11 INFO  time: compiled chescala in 0.82s
+2020.05.25 22:57:13 INFO  compiling chescala (1 scala source)
+2020.05.25 22:57:13 INFO  time: compiled chescala in 0.77s
+2020.05.25 22:57:36 INFO  compiling chescala (1 scala source)
+2020.05.25 22:57:36 INFO  time: compiled chescala in 0.78s
+2020.05.25 22:57:43 INFO  compiling chescala (1 scala source)
+2020.05.25 22:57:43 INFO  time: compiled chescala in 64ms
+2020.05.25 22:57:45 INFO  compiling chescala (1 scala source)
+2020.05.25 22:57:45 INFO  time: compiled chescala in 50ms
+2020.05.25 22:57:51 INFO  compiling chescala (1 scala source)
+2020.05.25 22:57:51 INFO  time: compiled chescala in 50ms
+2020.05.25 22:58:04 INFO  compiling chescala (1 scala source)
+2020.05.25 22:58:04 INFO  time: compiled chescala in 0.82s
+2020.05.25 22:58:08 INFO  compiling chescala (1 scala source)
+2020.05.25 22:58:08 INFO  time: compiled chescala in 0.12s
+2020.05.25 22:58:13 INFO  compiling chescala (1 scala source)
+2020.05.25 22:58:13 INFO  time: compiled chescala in 0.82s
+2020.05.25 22:58:15 INFO  compiling chescala (1 scala source)
+2020.05.25 22:58:15 INFO  time: compiled chescala in 0.77s
+2020.05.25 22:58:19 INFO  compiling chescala (1 scala source)
+2020.05.25 22:58:19 INFO  time: compiled chescala in 0.82s
+2020.05.25 22:58:23 INFO  compiling chescala (1 scala source)
+2020.05.25 22:58:23 INFO  time: compiled chescala in 61ms
+2020.05.25 22:58:25 INFO  compiling chescala (1 scala source)
+2020.05.25 22:58:25 INFO  time: compiled chescala in 0.78s
+2020.05.25 22:58:28 INFO  compiling chescala (1 scala source)
+2020.05.25 22:58:29 INFO  time: compiled chescala in 1.1s
+2020.05.25 23:06:08 INFO  compiling chescala (1 scala source)
+2020.05.25 23:06:10 INFO  time: compiled chescala in 1.12s
+2020.05.25 23:06:10 INFO  compiling chescala (1 scala source)
+2020.05.25 23:06:11 INFO  time: compiled chescala in 0.5s
+2020.05.25 23:06:54 INFO  compiling chescala (1 scala source)
+2020.05.25 23:06:55 INFO  time: compiled chescala in 1.11s
+2020.05.25 23:06:57 INFO  compiling chescala (1 scala source)
+2020.05.25 23:06:58 INFO  time: compiled chescala in 1.09s
+2020.05.25 23:07:47 INFO  compiling chescala (1 scala source)
+2020.05.25 23:07:47 INFO  time: compiled chescala in 0.14s
+2020.05.25 23:07:49 INFO  compiling chescala (1 scala source)
+2020.05.25 23:07:49 INFO  time: compiled chescala in 0.12s
+2020.05.25 23:07:51 INFO  compiling chescala (1 scala source)
+2020.05.25 23:07:51 INFO  time: compiled chescala in 49ms
+2020.05.25 23:07:53 INFO  compiling chescala (1 scala source)
+2020.05.25 23:07:53 INFO  time: compiled chescala in 0.17s
+2020.05.25 23:07:55 INFO  compiling chescala (1 scala source)
+2020.05.25 23:07:55 INFO  time: compiled chescala in 57ms
+2020.05.25 23:07:57 INFO  compiling chescala (1 scala source)
+2020.05.25 23:07:57 INFO  time: compiled chescala in 0.87s
+2020.05.25 23:12:27 INFO  compiling chescala (1 scala source)
+2020.05.25 23:12:27 INFO  time: compiled chescala in 0.81s
+2020.05.25 23:12:29 INFO  compiling chescala (1 scala source)
+2020.05.25 23:12:29 INFO  time: compiled chescala in 0.77s
+2020.05.25 23:12:38 INFO  compiling chescala (1 scala source)
+2020.05.25 23:12:38 INFO  time: compiled chescala in 0.79s
+2020.05.25 23:12:39 INFO  compiling chescala (1 scala source)
+2020.05.25 23:12:39 INFO  time: compiled chescala in 0.27s
+2020.05.25 23:15:32 INFO  compiling chescala (1 scala source)
+2020.05.25 23:15:32 INFO  time: compiled chescala in 0.74s
+2020.05.25 23:27:21 INFO  compiling chescala (1 scala source)
+2020.05.25 23:27:23 INFO  time: compiled chescala in 1.01s
+2020.05.25 23:27:24 INFO  compiling chescala (1 scala source)
+2020.05.25 23:27:24 INFO  time: compiled chescala in 58ms
+2020.05.25 23:27:27 INFO  compiling chescala (1 scala source)
+2020.05.25 23:27:27 INFO  time: compiled chescala in 56ms
+2020.05.25 23:27:28 INFO  compiling chescala (1 scala source)
+2020.05.25 23:27:28 INFO  time: compiled chescala in 70ms
+2020.05.25 23:27:31 INFO  compiling chescala (1 scala source)
+2020.05.25 23:27:31 INFO  time: compiled chescala in 51ms
+2020.05.25 23:27:32 INFO  compiling chescala (1 scala source)
+2020.05.25 23:27:32 INFO  time: compiled chescala in 46ms
+May 25, 2020 11:27:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+May 25, 2020 11:27:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+java.util.concurrent.CompletionException: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/PieceRule.scala:8: error: expected identifier; obtained private
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:230)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:150)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:120)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStat(ScalaToplevelMtags.scala:66)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.parseStats(ScalaToplevelMtags.scala:57)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:52)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:17)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:37)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:80)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:181)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:145)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:145)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:141)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:32)
+	at scala.collection.immutable.List.map(List.scala:286)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:28)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1018)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+2020.05.25 23:27:39 INFO  compiling chescala (1 scala source)
+2020.05.25 23:27:39 INFO  time: compiled chescala in 52ms
+2020.05.25 23:27:42 INFO  compiling chescala (1 scala source)
+2020.05.25 23:27:42 INFO  time: compiled chescala in 46ms
+2020.05.25 23:27:44 INFO  compiling chescala (1 scala source)
+2020.05.25 23:27:44 INFO  time: compiled chescala in 0.79s
+something's wrong: no file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/BoardAction.scala in scala.collection.mutable.Map[String,com.hansblackcat.Chess.Info]RangePosition(file:///Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/Chess/BoardAction.scala, 244, 244, 262)
+2020.05.25 23:35:31 INFO  compiling chescala (1 scala source)
+2020.05.25 23:35:31 INFO  time: compiled chescala in 0.22s
+2020.05.25 23:35:39 INFO  compiling chescala (2 scala sources)
+2020.05.25 23:35:41 INFO  time: compiled chescala in 1.32s
+2020.05.25 23:35:41 INFO  compiling chescala (1 scala source)
+2020.05.25 23:35:41 INFO  time: compiled chescala in 0.29s
+2020.05.25 23:36:22 INFO  compiling chescala (1 scala source)
+2020.05.25 23:36:22 INFO  time: compiled chescala in 56ms
+2020.05.25 23:36:26 INFO  compiling chescala (1 scala source)
+2020.05.25 23:36:26 INFO  time: compiled chescala in 0.16s
+2020.05.25 23:36:40 INFO  compiling chescala (1 scala source)
+2020.05.25 23:36:40 INFO  time: compiled chescala in 0.14s
+2020.05.25 23:36:53 INFO  compiling chescala (1 scala source)
+2020.05.25 23:36:53 INFO  time: compiled chescala in 0.14s
+2020.05.25 23:38:13 INFO  compiling chescala (2 scala sources)
+2020.05.25 23:38:13 INFO  time: compiled chescala in 0.19s
+2020.05.25 23:38:19 INFO  compiling chescala (2 scala sources)
+2020.05.25 23:38:19 INFO  time: compiled chescala in 0.24s
+2020.05.25 23:38:19 INFO  compiling chescala (2 scala sources)
+2020.05.25 23:38:19 INFO  time: compiled chescala in 0.13s
+2020.05.25 23:38:20 INFO  compiling chescala (2 scala sources)
+2020.05.25 23:38:20 INFO  time: compiled chescala in 0.13s
+2020.05.25 23:38:23 INFO  compiling chescala (2 scala sources)
+2020.05.25 23:38:23 INFO  time: compiled chescala in 0.15s
+2020.05.25 23:38:27 INFO  compiling chescala (3 scala sources)
+2020.05.25 23:38:28 INFO  time: compiled chescala in 1.35s
+2020.05.25 23:38:28 INFO  compiling chescala (1 scala source)
+2020.05.25 23:38:28 INFO  time: compiled chescala in 0.32s
+2020.05.25 23:38:30 INFO  compiling chescala (2 scala sources)
+May 25, 2020 11:38:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3426
+2020.05.25 23:38:31 INFO  time: compiled chescala in 1.62s
+2020.05.25 23:38:31 INFO  compiling chescala (1 scala source)
+2020.05.25 23:38:31 INFO  time: compiled chescala in 27ms
+2020.05.25 23:38:48 INFO  compiling chescala (1 scala source)
+2020.05.25 23:38:50 INFO  time: compiled chescala in 1.34s
+2020.05.25 23:38:50 INFO  compiling chescala (1 scala source)
+2020.05.25 23:38:50 INFO  time: compiled chescala in 0.48s
+2020.05.25 23:40:13 INFO  compiling chescala (1 scala source)
+2020.05.25 23:40:13 INFO  time: compiled chescala in 0.89s
+2020.05.25 23:40:13 INFO  compiling chescala (1 scala source)
+2020.05.25 23:40:14 INFO  time: compiled chescala in 0.11s
+2020.05.25 23:45:46 INFO  shutting down Metals
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...

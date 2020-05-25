@@ -1,7 +1,7 @@
 package com.hansblackcat.Chess
 import scala.collection.mutable.{Map=>MMap}
 
-class BoardAction extends Root with PGN {
+class BoardAction extends Root with PGN with PieceRule {
     // TagPair
     // Comment
     // private[this] var commentBuffer: MMap[Int, Comment]
@@ -15,9 +15,7 @@ class BoardAction extends Root with PGN {
     // TODO make this to case class
     private[this] var moveTextBuffer = "" // also check white, black .isEmpty
 
-    case class CurrentMoveText(
-        ipt: String, isTurn: Boolean, whats: Array[PGNSpecial], whos: Option[PGNPieceKind], wheres: Option[ExLocation]
-    )
+
 
     // TODO: add TagPair
     def start() = { 

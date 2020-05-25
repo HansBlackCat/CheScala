@@ -76,3 +76,8 @@ trait Info
 case object InfoNone extends Info
 case class InfoWhite(kind: PGNPieceKind, init: Boolean) extends Info
 case class InfoBlack(kind: PGNPieceKind, init: Boolean) extends Info
+
+
+case class CurrentMoveText(
+    ipt: String, isTurn: Boolean, whats: Array[PGNSpecial], whos: Option[PGNPieceKind], wheres: Option[ExLocation]
+)

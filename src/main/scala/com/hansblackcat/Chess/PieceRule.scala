@@ -2,13 +2,18 @@ package com.hansblackcat.Chess
 import scala.collection.mutable.{Map => MMap}
 import scala.math._
 
-trait PieceRule extends Root {
+trait PieceRule extends Root
+case class RangeRule(cMT: CurrentMoveText, info: Info) extends PieceRule {
+
+    
 
     private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
         require(baseGridKeys contains location)
-        
+
+        // TODO Wrap with case class
         val locArr = ExLocation(location).toArrLoc
-        val baseKeysArr = baseGridKeys.toArray
+        // TODO: More Generic
+        val baseKeysArr = (for (i <- baseGridKeys) yield ExLocation(i).toArrLoc).toArray
         
         val kindMatch = { 
             val tmp = kind match {
@@ -36,24 +41,12 @@ trait PieceRule extends Root {
                     else for (i <- -1 to 1) yield locArr +> (i, -1)
             }
             tmp.toArray
-
-            //// ---------- intersection
-
-            }
-
+            
+        }
+        (for (i <- kindMatch.filter(i => 0 <= i(0) && i(0) < 8 && 0 <= i(1) && i(1) < 8)) yield (i(0)+1) #> (i(1)+1)).toArray
     }
 
     def mapInterpret(currentMap: MMap[String, Info]) = {
 
-        var a: Location = NoneLocation
-        for (i <- Seq("a2", "kk")) {
-            try { a = ExLocation(i) }
-            catch {
-                case a: IllegalAccessException => {println("req err")}
-                case _: Throwable => {println("Some err")}
-            } finally {
-                println(a.toString ++ "aaaa")
-            }
-        }
     }
 }

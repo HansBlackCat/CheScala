@@ -54,5 +54,13 @@ class Root {
     )
     val baseMapHashTMP = baseGridKeys.zip(baseGridValue).toMap
     val baseMapHash = MMap(baseMapHashTMP.toSeq: _*)
+    
+    def infoBlackWhite(info: Info) = {
+        info match {
+            case InfoNone        => throw new Exception("call of None type")
+            case InfoBlack(_, _) => false
+            case InfoWhite(_, _) => true
+        }
+    }
 
 }

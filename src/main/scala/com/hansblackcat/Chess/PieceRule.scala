@@ -2,12 +2,22 @@ package com.hansblackcat.Chess
 import scala.collection.mutable.{Map => MMap}
 import scala.math._
 
-trait PieceRule extends Root
-case class RangeRule(cMT: CurrentMoveText, info: Info) extends PieceRule {
+case class PieceRule(currentBoard: MMap[String, Info]) extends Root {
 
+    private[this] var _currentBoard = currentBoard
+
+    private var _cKeys = currentBoard.keys
+    private var _cVals = currentBoard.values
+
+   
     
+    // match infoNone first,,
+    // run except King -- may cause check when move
 
-    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean) = {
+    // opt Array[ExLocation]
+    // ipt Info // iter == for i
+    private[this] def base1Range(location: String, kind: PGNPieceKind, isWhite: Boolean, currentBoard: MMap[String, Info]) = {
+        // Check
         require(baseGridKeys contains location)
 
         // TODO Wrap with case class
@@ -18,7 +28,8 @@ case class RangeRule(cMT: CurrentMoveText, info: Info) extends PieceRule {
         val kindMatch = { 
             val tmp = kind match {
                 case King => 
-                    for (i <- -1 to 1; j <- -1 to 1 if i!=0 & j!=0) yield locArr +> (i,j)
+                    val t = for (i <- -1 to 1; j <- -1 to 1 if i!=0 & j!=0) yield locArr +> (i,j)
+                    t
                 case Queen => 
                     val t1 = for (i <- -8 to 8 if i != 0) yield locArr +> (i,0)
                     val t2 = for (j <- -8 to 8 if j != 0) yield locArr +> (0,j) 
@@ -37,8 +48,13 @@ case class RangeRule(cMT: CurrentMoveText, info: Info) extends PieceRule {
                     val t = for (i <- -2 to 2; j <- -2 to 2 if abs(i) + abs(j) == 3) yield locArr +> (i,j)
                     t
                 case Pawn =>
-                    if (isWhite) for (i <- -1 to 1) yield locArr +> (i, 1)
-                    else for (i <- -1 to 1) yield locArr +> (i, -1)
+                    if (isWhite) {
+                        val default = IndexedSeq(locArr +> (0, 1))
+                        default
+                    } else {
+                        val default = IndexedSeq(locArr +> (0, -1))
+                        default
+                    } 
             }
             tmp.toArray
             

@@ -1,7 +1,7 @@
 package com.hansblackcat.Chess
 import scala.collection.mutable.{Map=>MMap}
 
-class BoardAction extends Root with PGN with PieceRule {
+class BoardAction extends Root with PGN {
     // TagPair
     // Comment
     // private[this] var commentBuffer: MMap[Int, Comment]

@@ -46,6 +46,7 @@ case class TPNBlack(contents: String) extends PGNTagPairs
 case class TPResult(contents: String) extends PGNTagPairs
 
 trait PGNPieceKind
+case object NoneKind extends PGNPieceKind
 case object Pawn extends PGNPieceKind
 case object King extends PGNPieceKind
 case object Queen extends PGNPieceKind

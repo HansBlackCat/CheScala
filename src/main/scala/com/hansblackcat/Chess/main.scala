@@ -5,6 +5,4 @@ object mainApp extends App {
 
     test.start()
     test.debugPrint
-    test.act("as")
-    test.debugPrint
 }

@@ -28,7 +28,7 @@ class BoardAction extends Root with PGN {
     def commentHere(comment: String) = {}
 
     def act(ipt: String) = {
-        //
+        // only Pawn-init-doubleMove make init true, else false
         currentBoard("c1") = currentBoard("a2")
         currentBoard("a2") = InfoNone
     }
@@ -124,10 +124,10 @@ class BoardAction extends Root with PGN {
 
     }
 
-    def debugPrint = {
+    def debugPrint(currentBoard: MMap[String, Info]): Unit = {
         def toUni(ipt: Info) = {
             ipt match {
-                case InfoNone => " "
+                case InfoNone => "\u2022"
                 case InfoWhite(kind, _) => 
                     kind match {
                         case King => "\u2654"
@@ -149,12 +149,15 @@ class BoardAction extends Root with PGN {
             }
         }
 
-        for (i <- ('a' to 'h').reverseIterator; j <- 1 to 8) {
+        for (j <- (1 to 8).reverseIterator; i <- 'a' to 'h') {
             val key = s"$i$j"
             print(toUni(currentBoard(key)) ++ " ")
-            if (j == 8) println("")
+            if (i == 'h') println("")
         }
     }
 
+    def debugPrint: Unit = {
+        debugPrint(currentBoard)
+    }
     
 }

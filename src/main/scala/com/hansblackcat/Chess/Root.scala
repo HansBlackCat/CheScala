@@ -100,6 +100,14 @@ class Root {
         tmpGrid
     }
 
+    // For Castling Test
+    val testGrid2 = {
+        var tmpGrid = emptyGrid.clone()
+        tmpGrid("e1") = King.<<@>; tmpGrid("e8") = King.<@>>; 
+        tmpGrid("h1") = Rook.<<@>; tmpGrid("h8") = Rook.<@>>; tmpGrid("a1") = Rook.<<@>; tmpGrid("a8") = Rook.<@>>
+        tmpGrid
+    }
+
 
     def _debugPrintB(currentBoard: MMap[String, Info]): Unit = {
         def toUni(ipt: Info) = {

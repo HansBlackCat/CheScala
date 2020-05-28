@@ -17,18 +17,25 @@ class BoardAction extends Root with PGN {
     private[this] var moveTextBuffer = "" // also check white, black .isEmpty
 
 
-
     // TODO: add TagPair
     def start(i : String) = { 
         currentBoard = i match {
-            case "" => baseMapHash
             case "base" => baseMapHash
             case "test1" => testGrid1
+            case "test2" => testGrid2
         }
         historyMoveText = Array[(String, String)]()
         currentMoveText = Array[(String, String)]()
         moveTextBuffer = ""
     }
+
+    def start() = {
+        currentBoard = baseMapHash
+        historyMoveText = Array[(String, String)]()
+        currentMoveText = Array[(String, String)]()
+        moveTextBuffer = ""
+    }
+
     // TDDO `{}` index
     def commentHere(comment: String) = {}
 

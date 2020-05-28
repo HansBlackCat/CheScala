@@ -99,4 +99,45 @@ class Root {
         tmpGrid("g8") = Knight.<<#>
         tmpGrid
     }
+
+
+    def _debugPrintB(currentBoard: MMap[String, Info]): Unit = {
+        def toUni(ipt: Info) = {
+            ipt match {
+                case InfoNone => "\u2022"
+                case InfoWhite(kind, _) => 
+                    kind match {
+                        case King => "\u2654"
+                        case Queen => "\u2655"
+                        case Rook => "\u2656"
+                        case Bishop => "\u2657"
+                        case Knight => "\u2658"
+                        case Pawn => "\u2659"
+                    }
+                case InfoBlack(kind, _) => 
+                    kind match {
+                        case King => "\u265A"
+                        case Queen => "\u265B"
+                        case Rook => "\u265C"
+                        case Bishop => "\u265D"
+                        case Knight => "\u265E"
+                        case Pawn => "\u265F"
+                    }
+            }
+        }
+
+        for (j <- (1 to 8).reverseIterator; i <- 'a' to 'h') {
+            val key = s"$i$j"
+            print(toUni(currentBoard(key)) ++ " ")
+            if (i == 'h') println("")
+        }
+    }
+
+    def _debugPrintR(arr: Array[ExLocation]) = {
+        for (j <- (1 to 8).reverseIterator; i <- 'a' to 'h') {
+            if (arr.contains(ExLocation(s"$i$j"))) print("\u265F ")
+            else print("\u2659 ")
+            if (i == 'h') println("")
+        }
+    }
 }

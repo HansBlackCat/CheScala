@@ -1,5 +1,6 @@
 package com.hansblackcat.Chess
 import scala.collection.mutable.{Map=>MMap}
+import scala.collection.mutable
 
 class BoardAction extends Root with PGN {
     // TagPair
@@ -18,8 +19,12 @@ class BoardAction extends Root with PGN {
 
 
     // TODO: add TagPair
-    def start() = { 
-        currentBoard = baseMapHash
+    def start(i : String) = { 
+        currentBoard = i match {
+            case "" => baseMapHash
+            case "base" => baseMapHash
+            case "test1" => testGrid1
+        }
         historyMoveText = Array[(String, String)]()
         currentMoveText = Array[(String, String)]()
         moveTextBuffer = ""
@@ -124,40 +129,24 @@ class BoardAction extends Root with PGN {
 
     }
 
-    def debugPrint(currentBoard: MMap[String, Info]): Unit = {
-        def toUni(ipt: Info) = {
-            ipt match {
-                case InfoNone => "\u2022"
+    // For debug printing
+    def debugPrintBoard = {
+        _debugPrintB(currentBoard)
+    }
+    def debugPrintRangeAll = {
+        for (i <- currentBoard) {
+            i._2 match {
+                case InfoNone => {}
                 case InfoWhite(kind, _) => 
-                    kind match {
-                        case King => "\u2654"
-                        case Queen => "\u2655"
-                        case Rook => "\u2656"
-                        case Bishop => "\u2657"
-                        case Knight => "\u2658"
-                        case Pawn => "\u2659"
-                    }
+                    println("<< DEBUG Print Range >>")
+                    println(s"-- ${kind} in ${i._1} --")
+                    _debugPrintR(PieceRule(currentBoard)(i._1))
                 case InfoBlack(kind, _) => 
-                    kind match {
-                        case King => "\u265A"
-                        case Queen => "\u265B"
-                        case Rook => "\u265C"
-                        case Bishop => "\u265D"
-                        case Knight => "\u265E"
-                        case Pawn => "\u265F"
-                    }
+                    println("<< DEBUG Print Range >>")
+                    println(s"-- ${kind} in ${i._1} --")
+                    _debugPrintR(PieceRule(currentBoard)(i._1))
             }
         }
-
-        for (j <- (1 to 8).reverseIterator; i <- 'a' to 'h') {
-            val key = s"$i$j"
-            print(toUni(currentBoard(key)) ++ " ")
-            if (i == 'h') println("")
-        }
-    }
-
-    def debugPrint: Unit = {
-        debugPrint(currentBoard)
     }
     
 }

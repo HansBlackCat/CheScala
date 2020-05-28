@@ -15,6 +15,7 @@ import scalafx.event.ActionEvent
 import scalafx.scene.text.TextFlow
 import scalafx.scene.control.TextField
 
+/*
 object DrawingMain extends JFXApp {
     stage = new JFXApp.PrimaryStage {
         title = "CheScala"
@@ -45,3 +46,4 @@ object DrawingMain extends JFXApp {
         }
     }
 }
+*/

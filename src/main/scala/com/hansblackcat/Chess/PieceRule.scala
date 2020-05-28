@@ -216,6 +216,15 @@ class PieceRule(currentBoard: MMap[String, Info]) extends Root {
                             if (k._2 contains j) whenMoveCheck = j +: whenMoveCheck
                         }
                     }
+                    // estimate king checked position
+                    for (l <- forKingRangeW) {
+                        for (m <- l._2) {
+                            if (kingPossible contains m) whenMoveCheck = m +: whenMoveCheck
+                        }
+                    }
+                    // Castling
+
+                    //
                     rangeFinderMMap(i._1) = rangeFinderMMap(i._1) diff whenMoveCheck.distinct
                 case InfoWhite(King, init) => {}
                     val kingPossible = rangeFinderMMap(i._1)
@@ -238,20 +247,28 @@ class PieceRule(currentBoard: MMap[String, Info]) extends Root {
                             if (k._2 contains j) whenMoveCheck = j +: whenMoveCheck
                         }
                     }
+                    for (l <- forKingRangeW) {
+                        for (m <- l._2) {
+                            if (kingPossible contains m) whenMoveCheck = m +: whenMoveCheck
+                        }
+                    }
                     rangeFinderMMap(i._1) = rangeFinderMMap(i._1) diff whenMoveCheck.distinct
                 case _ => {} 
             }
         }
-         // TODO avoid checking move
+
+
+        // TODO avoid checking move
         rangeFinderMMap
     }
 
 
-    private[this] def debugPrintRange(arr: Array[ExLocation]) = {
-        for (j <- (1 to 8).reverseIterator; i <- 'a' to 'h') {
-            if (arr.contains(ExLocation(s"$i$j"))) print("\u265F ")
-            else print("\u2659 ")
-            if (i == 'h') println("")
-        }
+
+}
+
+object PieceRule {
+    def apply(currentBoard: MMap[String, Info]) = {
+        val inst = new PieceRule(currentBoard)
+        inst.rangeFinder
     }
 }

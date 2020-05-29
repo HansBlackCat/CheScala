@@ -5,8 +5,7 @@ ThisBuild / version := "0.1.0"
 
 // Add dependency on ScalaFX library
 libraryDependencies ++= Seq(
-  "org.scalafx" %% "scalafx" % "14-R19",
-  "com.lihaoyi" %% "fastparse" % "2.2.2"
+  "org.scalafx" %% "scalafx" % "14-R19"
 )
 
 // Determine OS version of JavaFX binaries

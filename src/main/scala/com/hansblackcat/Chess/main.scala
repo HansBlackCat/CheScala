@@ -1,6 +1,7 @@
 package com.hansblackcat.Chess
 import java.io._
 
+
 object mainApp extends App {
     val test = new BoardAction
 
@@ -10,7 +11,8 @@ object mainApp extends App {
     test.debugPrintRangeAll
     */
 
-    test.start("test2")
+    test.start("test3")
     test.debugPrintBoard
-    
+    test.debugPrintRangeAll
+
 }

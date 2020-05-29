@@ -20,9 +20,11 @@ class BoardAction extends Root with PGN {
     // TODO: add TagPair
     def start(i : String) = { 
         currentBoard = i match {
-            case "base" => baseMapHash
+            case "base"  => baseMapHash
             case "test1" => testGrid1
             case "test2" => testGrid2
+            case "test3" => testGrid3
+            case _       => baseMapHash
         }
         historyMoveText = Array[(String, String)]()
         currentMoveText = Array[(String, String)]()

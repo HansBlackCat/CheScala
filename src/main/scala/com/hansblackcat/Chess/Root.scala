@@ -103,8 +103,15 @@ class Root {
     // For Castling Test
     val testGrid2 = {
         var tmpGrid = emptyGrid.clone()
-        tmpGrid("e1") = King.<<@>; tmpGrid("e8") = King.<@>>; 
+        tmpGrid("e1") = King.<<@>; tmpGrid("e8") = King.<@>>; tmpGrid("f4") = Rook.<<#> 
         tmpGrid("h1") = Rook.<<@>; tmpGrid("h8") = Rook.<@>>; tmpGrid("a1") = Rook.<<@>; tmpGrid("a8") = Rook.<@>>
+        tmpGrid
+    }
+    val testGrid3 = {
+        var tmpGrid = emptyGrid.clone()
+        tmpGrid("e1") = King.<<@>; tmpGrid("e8") = King.<@>>; 
+        tmpGrid("h1") = Rook.<<@>; tmpGrid("h8") = Rook.<@>>; tmpGrid("a1") = Rook.<<@>; tmpGrid("a8") = Rook.<#>>
+        tmpGrid("g4") = Rook.<<#>; tmpGrid("c3") = Bishop.<#>>
         tmpGrid
     }
 

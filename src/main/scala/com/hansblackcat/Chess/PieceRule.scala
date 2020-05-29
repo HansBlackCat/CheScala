@@ -12,13 +12,9 @@ class PieceRule(currentBoard: MMap[String, Info]) extends Root {
     // opt Array[ExLocation]
     // ipt Info // iter == for i
     private[this] def baseRangeExceptKing(location: String, kind: PGNPieceKind, isWhite: Boolean, currentBoard: MMap[String, Info]) = {
-        // Check
         require(baseGridKeys contains location)
 
-        // TODO Wrap with def
         val locArr = ExLocation(location).toArrLoc
-        // TODO: More Generic
-        // val baseKeysArr = (for (i <- currentBoard) yield ExLocation(i).toArrLoc).toArray
 
         // Each pieces' locations
         val availKeysArr = (for {
@@ -195,9 +191,13 @@ class PieceRule(currentBoard: MMap[String, Info]) extends Root {
         val (rangeFinderMMap, forKingRangeB, forKingRangeW) = _rangeFinder(_currentBoard)
         for (i <- _currentBoard) {
             i._2 match {
+                // ----------------------------------------------------------------------------
+                // Black King
+                // ----------------------------------------------------------------------------
                 case InfoBlack(King, init) => 
                     val kingPossible = rangeFinderMMap(i._1)
                     var whenMoveCheck = Array[ExLocation]()
+                    var castlingPosition = Array[ExLocation]()
                     for {
                         // All valid enemies near King
                         j <- kingPossible;
@@ -222,13 +222,63 @@ class PieceRule(currentBoard: MMap[String, Info]) extends Root {
                             if (kingPossible contains m) whenMoveCheck = m +: whenMoveCheck
                         }
                     }
-                    // Castling
-
-                    //
-                    rangeFinderMMap(i._1) = rangeFinderMMap(i._1) diff whenMoveCheck.distinct
+                    // ----------------------------------------------------------------------------
+                    // BK Castling
+                    // ----------------------------------------------------------------------------
+                    val castlingPositionA = {
+                        var castlingPositionABool = true
+                        if (
+                            init == true &&
+                            (
+                                _currentBoard("a8") match {
+                                    case InfoBlack(kind, init) => 
+                                        if (kind == Rook && init == true) true else false
+                                    case _ => false
+                                }
+                            ) &&
+                            {
+                                for (i <- forKingRangeW) {
+                                    i._2 match {
+                                        case a if a contains ExLocation("c8") => castlingPositionABool = false
+                                        case b if b contains ExLocation("e8") => castlingPositionABool = false
+                                        case _ => {}
+                                    }
+                                }
+                                castlingPositionABool
+                            }
+                        ) castlingPosition = ExLocation("c8") +: castlingPosition
+                    }
+                    val castlingPositionH = {
+                        var castlingPositionABool = true
+                        if (
+                            init == true &&
+                            (
+                                _currentBoard("h8") match {
+                                    case InfoBlack(kind, init) => 
+                                        if (kind == Rook && init == true) true else false
+                                    case _ => false
+                                }
+                            ) &&
+                            {
+                                for (i <- forKingRangeW) {
+                                    i._2 match {
+                                        case a if a contains ExLocation("g8") => castlingPositionABool = false
+                                        case b if b contains ExLocation("e8") => castlingPositionABool = false
+                                        case _ => {}
+                                    }
+                                }
+                                castlingPositionABool
+                            }
+                        ) castlingPosition = ExLocation("g8") +: castlingPosition
+                    }
+                    rangeFinderMMap(i._1) = (rangeFinderMMap(i._1) diff whenMoveCheck.distinct) ++ castlingPosition
+                // ----------------------------------------------------------------------------
+                // White King
+                // ----------------------------------------------------------------------------
                 case InfoWhite(King, init) => {}
                     val kingPossible = rangeFinderMMap(i._1)
                     var whenMoveCheck = Array[ExLocation]()
+                    var castlingPosition = Array[ExLocation]()
                     for {
                         // Valid enemies near King
                         j <- kingPossible;
@@ -247,18 +297,66 @@ class PieceRule(currentBoard: MMap[String, Info]) extends Root {
                             if (k._2 contains j) whenMoveCheck = j +: whenMoveCheck
                         }
                     }
-                    for (l <- forKingRangeW) {
+                    for (l <- forKingRangeB) {
                         for (m <- l._2) {
                             if (kingPossible contains m) whenMoveCheck = m +: whenMoveCheck
                         }
                     }
-                    rangeFinderMMap(i._1) = rangeFinderMMap(i._1) diff whenMoveCheck.distinct
+                    // ----------------------------------------------------------------------------
+                    // WK Castling
+                    // ----------------------------------------------------------------------------
+                    val castlingPositionA = {
+                        var castlingPositionABool = true
+                        if (
+                            init == true &&
+                            (
+                                _currentBoard("a1") match {
+                                    case InfoWhite(kind, init) => 
+                                        if (kind == Rook && init == true) true else false
+                                    case _ => false
+                                }
+                            ) &&
+                            {
+                                for (i <- forKingRangeB) {
+                                    i._2 match {
+                                        case a if a contains ExLocation("c1") => castlingPositionABool = false
+                                        case b if b contains ExLocation("e1") => castlingPositionABool = false
+                                        case _ => {}
+                                    }
+                                }
+                                castlingPositionABool
+                            }
+                        ) castlingPosition = ExLocation("c1") +: castlingPosition
+                    }
+                    val castlingPositionH = {
+                        var castlingPositionABool = true
+                        if (
+                            init == true &&
+                            (
+                                _currentBoard("h1") match {
+                                    case InfoWhite(kind, init) => 
+                                        if (kind == Rook && init == true) true else false
+                                    case _ => false
+                                }
+                            ) &&
+                            {
+                                for (i <- forKingRangeB) {
+                                    i._2 match {
+                                        case a if a contains ExLocation("g1") => castlingPositionABool = false
+                                        case b if b contains ExLocation("e1") => castlingPositionABool = false
+                                        case _ => {}
+                                    }
+                                }
+                                castlingPositionABool
+                            }
+                        ) castlingPosition = ExLocation("g1") +: castlingPosition
+                    }
+                    //
+                    rangeFinderMMap(i._1) = (rangeFinderMMap(i._1) diff whenMoveCheck.distinct) ++ castlingPosition
                 case _ => {} 
             }
         }
 
-
-        // TODO avoid checking move
         rangeFinderMMap
     }
 

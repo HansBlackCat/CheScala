@@ -1,6 +1,5 @@
 package com.hansblackcat.Chess
-import scala.collection.mutable.{Map=>MMap}
-import scala.collection.mutable
+import scala.collection.mutable.{Map=>MMap, ListBuffer}
 
 class BoardAction extends Root with PGN {
     // TagPair
@@ -8,17 +7,17 @@ class BoardAction extends Root with PGN {
     // private[this] var commentBuffer: MMap[Int, Comment]
 
     private[this] var currentBoard: MMap[String, Info] = MMap.empty
+    private[this] var historyBoard: ListBuffer[MMap[String,Info]] = ListBuffer()
+
+    private[this] var currentPieceRule: MMap[String,Array[ExLocation]] = MMap.empty
 
     // (whiteAction, blackAction)
-    private[this] var historyMoveText = Array[(String, String)]()
-    private[this] var currentMoveText = Array[(String, String)]()
+    private[this] var historyMoveText = ListBuffer[(String,String)]()
 
     // TODO make this to case class
     private[this] var moveTextBuffer = "" // also check white, black .isEmpty
 
-
-    // TODO: add TagPair
-    def start(i : String) = { 
+    private[this] def _start(i: String) = {
         currentBoard = i match {
             case "base"  => baseMapHash
             case "test1" => testGrid1
@@ -26,25 +25,48 @@ class BoardAction extends Root with PGN {
             case "test3" => testGrid3
             case _       => baseMapHash
         }
-        historyMoveText = Array[(String, String)]()
-        currentMoveText = Array[(String, String)]()
+        currentPieceRule = PieceRule(currentBoard)
+        historyMoveText = ListBuffer[(String,String)]()
         moveTextBuffer = ""
     }
 
-    def start() = {
-        currentBoard = baseMapHash
-        historyMoveText = Array[(String, String)]()
-        currentMoveText = Array[(String, String)]()
-        moveTextBuffer = ""
-    }
+    // TODO: add TagPair
+    def start(i : String) = _start(i)
+    def start() = _start("base")
 
     // TDDO `{}` index
     def commentHere(comment: String) = {}
 
-    def act(ipt: String) = {
-        // only Pawn-init-doubleMove make init true, else false
-        currentBoard("c1") = currentBoard("a2")
-        currentBoard("a2") = InfoNone
+    def currentShow(ipt: String) = {
+        require(ipt.length() == 2)
+        currentBoard(ipt)
+    }
+
+    def possibleShow(ipt: String) = {
+        require(ipt.length() == 2)
+        _debugPrintR(currentPieceRule(ipt))
+    }
+
+    def possibleShowAll() = {
+        PieceRule(currentBoard)
+    }
+
+    def allHistoryMTShow() = {
+        println("< Right Before >")
+        println(moveTextBuffer)
+        println("< History >")
+        println(historyMoveText)
+    }
+
+    def actWithMoveTest(ipt: String) = {
+        // act sth
+        moveTextBuffer match {
+            case a if a.isEmpty  => moveTextBuffer = ipt
+            case b if !b.isEmpty => 
+                historyMoveText = historyMoveText :+ (b, ipt)
+                moveTextBuffer = ""
+        }
+
     }
 
 
@@ -123,15 +145,6 @@ class BoardAction extends Root with PGN {
         CurrentMoveText(ipt, isTurn, whats, whos, wheres)
     }
 
-    // OFR(C), Capture, QSC, KSC, Prom, C, CM
-    /* When castling not allowed
-    Your king has been moved earlier in the game.
-    The rook that you would castle with has been moved earlier in the game.
-    There are pieces standing between your king and rook.
-    The king is in check.
-    The king moves through a square that is attacked by a piece of the opponent.
-    The king would be in check after castling.
-    */
 
     def checkAvail() = {}
     def action() = {

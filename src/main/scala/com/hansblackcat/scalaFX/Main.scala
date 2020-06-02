@@ -26,6 +26,10 @@ import scalafx.scene.layout.TilePane
 import scalafx.beans.property.StringProperty
 import scalafx.scene.input.MouseEvent
 import scalafx.scene.Node
+import scalafx.scene.shape.StrokeLineCap.Square
+import scalafx.event.EventHandler
+import scalafx.event.EventType
+import scalafx.scene.input.MouseButton
 
 object Main extends JFXApp with Functions {
     stage = new JFXApp.PrimaryStage {
@@ -80,52 +84,48 @@ object Main extends JFXApp with Functions {
         val newBoard = new BoardAction
         newBoard.start()
         val pieceRange = newBoard.possibleShowAll()
-        
-        val gridPane = new GridPane { gridLinesVisible = true }
 
+        val gridPane = new GridPane { gridLinesVisible = true }
         for (row <- 1 to 8; column <- 1 to 8) {
             val tmpText = s"${(row+96).toChar}${9-column}"
             
+            val button = new Button {
+                maxHeight = Double.MaxValue
+                maxWidth = Double.MaxValue
+                style = """
+                -fx-background-color: transparent;
+                -fx-stroke: transparent;
+                """
+            }
+            val rectangle = new Rectangle {
+                width = 75
+                height = 75
+                fill = if ((row + column) % 2 == 0) Color.Bisque else Color.SaddleBrown
+                stroke = Color.Black
+            }
+            val label = new Label {
+                maxHeight = Double.MaxValue
+                maxWidth = Double.MaxValue
+
+                text = toUni(newBoard.currentShow(tmpText))
+                style = """
+                -fx-text-alignment: center;
+                -fx-alignment: center;
+                """
+                font = Font(30)
+            }
+            button.onAction = (e: ActionEvent) => {
+                
+            }
+            
             val grid = new GridPane {
                 children = List(
-                    new Rectangle {
-                        width = 75
-                        height = 75
-                        fill = if ((row + column) % 2 == 0) Color.Bisque else Color.SaddleBrown
-                        stroke = Color.Black
-                    },
-                    new Label {
-                        maxHeight = Double.MaxValue
-                        maxWidth = Double.MaxValue
-
-                        text = toUni(newBoard.currentShow(tmpText))
-                        style = """
-                        -fx-text-alignment: center;
-                        -fx-alignment: center;
-                        """
-                        font = Font(30)
-                    },
-                    /*
-                    new Button {
-                        maxWidth = Double.MaxValue
-                        maxHeight = Double.MaxValue
-                        
-                        style = {
-                            """
-                            -fx-background-color: transparent;
-                            -fx-border-color: transparent;
-                            """
-                        }
-                        onAction = (actionEvent: ActionEvent) => {
-                            style = """
-                            -fx-background-color: black;
-                            -fx-border-color: transparent;
-                            """
-                        }
-                    },
-                    */
+                    rectangle,
+                    label,
+                    button
                 )
             }
+
             gridPane.add(grid, row, column)
         } 
         
@@ -133,20 +133,15 @@ object Main extends JFXApp with Functions {
             node.setOnMouseEntered((mouseEvent: MouseEvent) => {
                 val col = GridPane.getColumnIndex(node)
                 val row = GridPane.getRowIndex(node)
-
-                gridPane.children(8*(col-1)+row).setStyle("""
-                ;
-                """)
-                
+                println(s"$col$row")
+               
                 
                 
             })
             node.setOnMouseExited((mouseEvent: MouseEvent) => {
                 val col = GridPane.getColumnIndex(node)
                 val row = GridPane.getRowIndex(node)
-
-
-                node.setStyle("-fx-background-color:#dae7f3;")
+                
             })
         }
 
@@ -157,8 +152,7 @@ object Main extends JFXApp with Functions {
         -fx-padding: 6px;
         -fx-font-size: 1.2em;
         """)
-      */
-        
+        */
         
         gridPane
     }

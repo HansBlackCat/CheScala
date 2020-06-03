@@ -1,12 +1,24 @@
+import Dependencies._
 
 ThisBuild / organization := "com.hansblackcat"
 ThisBuild / scalaVersion := "2.13.2"
 ThisBuild / version := "0.1.0"
 
-// Add dependency on ScalaFX library
-libraryDependencies ++= Seq(
-  "org.scalafx" %% "scalafx" % "14-R19"
-)
+enablePlugins(ScalaJSPlugin)
+// This is an application with a main method
+scalaJSUseMainModuleInitializer := true
+jsEnv := new org.scalajs.jsenv.jsdomnodejs.JSDOMNodeJSEnv()
+
+lazy val root = (project in file("."))
+  .settings(
+    libraryDependencies ++= Seq(
+      scalaTest % Test,
+      "org.scala-js" %%% "scalajs-dom" % "1.0.0",
+      "org.scalafx" %% "scalafx" % "14-R19",
+    )
+    
+  )
+
 
 // Determine OS version of JavaFX binaries
 lazy val osName = System.getProperty("os.name") match {
@@ -21,3 +33,5 @@ lazy val javaFXModules = Seq("base", "controls", "fxml", "graphics", "media", "s
 libraryDependencies ++= javaFXModules.map( m =>
   "org.openjfx" % s"javafx-$m" % "14.0.1" classifier osName
 )
+
+

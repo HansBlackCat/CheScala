@@ -1,5 +1,3 @@
-import Dependencies._
-
 ThisBuild / organization := "com.hansblackcat"
 ThisBuild / scalaVersion := "2.13.2"
 ThisBuild / version := "0.1.0"
@@ -8,13 +6,15 @@ enablePlugins(ScalaJSPlugin)
 // This is an application with a main method
 scalaJSUseMainModuleInitializer := true
 jsEnv := new org.scalajs.jsenv.jsdomnodejs.JSDOMNodeJSEnv()
+testFrameworks += new TestFramework("utest.runner.Framework")
 
 lazy val root = (project in file("."))
   .settings(
     libraryDependencies ++= Seq(
-      scalaTest % Test,
       "org.scala-js" %%% "scalajs-dom" % "1.0.0",
       "org.scalafx" %% "scalafx" % "14-R19",
+      "org.scala-js" %%% "scalajs-dom" % "1.0.0",
+      "com.lihaoyi" %%% "utest" % "0.7.4" % "test"
     )
     
   )

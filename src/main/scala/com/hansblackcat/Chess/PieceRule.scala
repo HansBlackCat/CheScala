@@ -302,6 +302,12 @@ class PieceRule(currentBoard: MMap[String, Info]) extends Root {
                             if (kingPossible contains m) whenMoveCheck = m +: whenMoveCheck
                         }
                     }
+                    // TODO: Checking Move 
+                    for (l <- forKingRangeW) {
+                        if (l._2 contains ExLocation(i._1)) {
+                            //...//
+                        }
+                    }
                     // ----------------------------------------------------------------------------
                     // WK Castling
                     // ----------------------------------------------------------------------------

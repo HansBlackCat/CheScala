@@ -70,6 +70,10 @@ class BoardAction extends Root with PGN {
     }
 
 
+
+    
+    // PGN Interpreter
+
     // 1. Bb5 cxb5 Bxf7+ O-O e8=Q# 
     def setMoveText(ipt: String) = {
         var txt = ipt

@@ -1,0 +1,53 @@
+2020.06.19 19:39:03 INFO  started: Metals version 0.9.0 in workspace '/Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/scalaFX'
+2020.06.19 19:39:04 INFO  shutting down Metals
+2020.06.19 19:39:04 INFO  time: initialize in 1.18s
+Jun 19, 2020 7:39:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "initialized",
+  "params": {}
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.UnsupportedOperationException
+	at org.eclipse.lsp4j.services.LanguageClient.registerCapability(LanguageClient.java:50)
+	at scala.meta.internal.metals.DelegatingLanguageClient.registerCapability(DelegatingLanguageClient.scala:26)
+	at scala.meta.internal.metals.DelegatingLanguageClient.registerCapability(DelegatingLanguageClient.scala:26)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$registerNiceToHaveFilePatterns$5(MetalsLanguageServer.scala:582)
+	at scala.Option$WithFilter.map(Option.scala:230)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$registerNiceToHaveFilePatterns$3(MetalsLanguageServer.scala:577)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$registerNiceToHaveFilePatterns$2(MetalsLanguageServer.scala:576)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$registerNiceToHaveFilePatterns$1(MetalsLanguageServer.scala:575)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.MetalsLanguageServer.registerNiceToHaveFilePatterns(MetalsLanguageServer.scala:574)
+	at scala.meta.internal.metals.MetalsLanguageServer.initialized(MetalsLanguageServer.scala:643)
+	... 16 more
+
+2020.06.19 19:39:05 INFO  no build target: using presentation compiler with only scala-library
+2020.06.19 19:39:08 WARN  no build target for: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/scalaFX/Main.scala
+2020.06.19 19:39:15 INFO  started: Metals version 0.9.0 in workspace '/Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/scalaFX'
+2020.06.19 19:39:16 INFO  time: initialize in 1.03s
+2020.06.19 19:39:16 WARN  no build tool detected in workspace '/Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/scalaFX'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.06.19 19:39:16 INFO  no build target: using presentation compiler with only scala-library
+2020.06.19 19:39:19 WARN  no build target for: /Users/hansblackcat/Documents/Git/CheScala/src/main/scala/com/hansblackcat/scalaFX/Main.scala
+2020.06.19 19:39:56 INFO  shutting down Metals
